@@ -64,6 +64,7 @@ body {
   box-shadow: 0 1rem 1rem hsla(212, 86%, 34%, 0.11);
   text-align: left;
   color: var(--grayish-blue);
+  border-radius: 0.4rem;
 }
 .feature-section article h3 {
   color: var(--very-dark-blue);
@@ -81,17 +82,31 @@ body {
   justify-content: center;
 }
 .feature-section .supervisor-card {
-  border-top: 2px solid var(--cyan);
+  border-top: 4px solid var(--cyan);
   margin-top: 14rem;
 }
 .feature-section .team-builder-card {
-  border-top: 2px solid var(--red);
+  border-top: 4px solid var(--red);
 }
 .feature-section .calculator-card {
-  border-top: 2px solid var(--blue);
+  border-top: 4px solid var(--blue);
   margin-top: 14rem;
 }
 .feature-section .karma-card {
-  border-top: 2px solid var(--orange);
+  border-top: 4px solid var(--orange);
   grid-column: 2/3;
+}
+
+.attribution {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 3rem 0;
+  color: var(--grayish-blue);
+}
+.attribution__link {
+  color: var(--very-dark-blue);
+  font-weight: 600;
+}
+.attribution__link:not(:last-child) {
+  margin-right: 1.5rem;
 }/*# sourceMappingURL=style.css.map */
