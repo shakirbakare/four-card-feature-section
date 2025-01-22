@@ -50,40 +50,42 @@ body {
 .feature-section {
   background: var(--very-light-gray);
   width: 144rem;
-  padding: 12rem;
+  padding: 8rem 12rem;
   text-align: center;
 
   &__headline {
+    font-size: 3.6rem;
     font-weight: 200;
-    width: 30rem;
+    width: 50rem;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     color: var(--grayish-blue);
     line-height: 1.3;
 
     span {
+      display: block;
       font-weight: 600;
       color: var(--very-dark-blue);
     }
   }
 
   &__paragraph {
-    width: 45rem;
+    font-size: 1.8rem;
+    width: 53rem;
     margin: 0 auto;
     color: var(--grayish-blue);
-    margin-bottom: 3rem;
+    margin-bottom: 6.5rem;
   }
 
   article {
-    width: 30rem;
-    height: 20rem;
-    padding: 4rem 3rem;
+    width: 35rem;
+    height: 25rem;
+    padding: 3rem 3rem;
     background: var(--very-light-gray);
-    box-shadow: 0 1rem 1.5rem rgba(76, 78, 97, 0.2);
-    margin-bottom: 4rem;
+    box-shadow: 0 1rem 1rem hsla(212, 86%, 34%, 0.11);
     text-align: left;
     color: var(--grayish-blue);
-    border-top: 2px solid var(--cyan);
+    // border-top: 2px solid var(--cyan);
 
     h3 {
       color: var(--very-dark-blue);
@@ -91,28 +93,35 @@ body {
     }
 
     img {
-      margin-left: 21rem;
-      margin-top: 3rem;
+      margin-left: 22.5rem;
+      margin-top: 4rem;
     }
   }
 
-  .row-card {
-    display: flex;
-    gap: 36rem;
-
-    article {
-      margin: 0 auto;
-    }
+  .grid-card {
+    display: grid;
+    grid-template-columns: repeat(3, 35rem);
+    grid-template-rows: repeat(2, 25rem);
+    gap: 3rem;
+    justify-content: center;
   }
 
-  .column-card {
-    // width: 80%;
-    margin: 0 auto;
-    background: #000;
-    position: absolute;
+  .supervisor-card {
+    border-top: 2px solid var(--cyan);
+    margin-top: 14rem;
+  }
 
-    article {
-      margin: 0 auto;
-    }
+  .team-builder-card {
+    border-top: 2px solid var(--red);
+  }
+
+  .calculator-card {
+    border-top: 2px solid var(--blue);
+    margin-top: 14rem;
+  }
+
+  .karma-card {
+    border-top: 2px solid var(--orange);
+    grid-column: 2 / 3;
   }
 }
